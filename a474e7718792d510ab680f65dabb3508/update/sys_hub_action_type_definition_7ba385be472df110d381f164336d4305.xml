@@ -27,15 +27,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7ba385be472df110d381f164336d4305</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Get HTML from Wikipedia</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_7ba385be472df110d381f164336d4305</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-01 16:16:16</sys_updated_on>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2023-10-05 09:33:14</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -137,7 +137,7 @@
         <sys_created_on>2023-10-01 15:51:35</sys_created_on>
         <sys_id>47148dbe472df110d381f164336d4399</sys_id>
         <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 16:15:51</sys_updated_on>
     </sys_hub_step_instance>
@@ -184,18 +184,6 @@ outputs.body = responseBody;&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=47148dbe472df110d381f164336d4399"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>47148dbe472df110d381f164336d4399</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-01 15:51:35</sys_created_on>
-        <sys_id>83148dbe472df110d381f164336d43a4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-01 15:51:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>article_name</field>
         <id>47148dbe472df110d381f164336d4399</id>
         <sys_created_by>admin</sys_created_by>
@@ -207,21 +195,8 @@ outputs.body = responseBody;&#13;
         <table>var__m_sys_hub_step_ext_input_47148dbe472df110d381f164336d4399</table>
         <value>{{action.article_name}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>47148dbe472df110d381f164336d4399</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-01 15:51:35</sys_created_on>
-        <sys_id>4b148dbe472df110d381f164336d43a4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-01 15:51:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_47148dbe472df110d381f164336d4399^id=47148dbe472df110d381f164336d4399"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=47148dbe472df110d381f164336d4399"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=47148dbe472df110d381f164336d4399"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=47148dbe472df110d381f164336d4399^sys_idNOT IN3aa981b6476df110d381f164336d437e"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -290,7 +265,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 16:15:51</sys_updated_on>
@@ -374,7 +349,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
@@ -457,7 +432,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
@@ -488,11 +463,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:56:31</sys_created_on>
         <sys_id>6735c132476df110d381f164336d43ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Body</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_47148dbe472df110d381f164336d4399_body_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
         <url/>
@@ -511,11 +486,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:56:31</sys_created_on>
         <sys_id>df35c132476df110d381f164336d43b6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>HTTP Status</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_47148dbe472df110d381f164336d4399_http_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
         <url/>
@@ -589,7 +564,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:51:35</sys_updated_on>
@@ -676,7 +651,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:57:32</sys_updated_on>
@@ -763,7 +738,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:57:32</sys_updated_on>
@@ -850,7 +825,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
@@ -937,7 +912,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 16:16:14</sys_updated_on>
@@ -995,11 +970,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:51:35</sys_created_on>
         <sys_id>47148dbe472df110d381f164336d4397</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Article Name</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_7ba385be472df110d381f164336d4305_article_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:51:35</sys_updated_on>
         <url/>
@@ -1020,11 +995,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:56:31</sys_created_on>
         <sys_id>2f35c132476df110d381f164336d43d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>HTTP Status</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7ba385be472df110d381f164336d4305_http_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
         <url/>
@@ -1043,11 +1018,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:56:31</sys_created_on>
         <sys_id>ab35c132476df110d381f164336d43da</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7ba385be472df110d381f164336d4305___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
         <url/>
@@ -1066,11 +1041,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:56:31</sys_created_on>
         <sys_id>e735c132476df110d381f164336d43de</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Body</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7ba385be472df110d381f164336d4305_body_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
         <url/>
@@ -1089,11 +1064,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:56:31</sys_created_on>
         <sys_id>ef35c132476df110d381f164336d43d0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7ba385be472df110d381f164336d4305___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:56:31</sys_updated_on>
         <url/>
@@ -1146,7 +1121,7 @@ outputs.body = responseBody;&#13;
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:07</sys_updated_on>
@@ -1251,7 +1226,7 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>03950d32476df110d381f164336d430b</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 16:16:16</sys_updated_on>
     </sys_hub_step_instance>
@@ -1298,18 +1273,6 @@ outputs.body = responseBody;&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=03950d32476df110d381f164336d430b"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>03950d32476df110d381f164336d430b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-01 15:58:08</sys_created_on>
-        <sys_id>87950d32476df110d381f164336d4318</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>article_name</field>
         <id>03950d32476df110d381f164336d430b</id>
         <sys_created_by>admin</sys_created_by>
@@ -1321,21 +1284,8 @@ outputs.body = responseBody;&#13;
         <table>var__m_sys_hub_step_ext_input_03950d32476df110d381f164336d430b</table>
         <value>{{action.article_name}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>03950d32476df110d381f164336d430b</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-01 15:58:08</sys_created_on>
-        <sys_id>4b950d32476df110d381f164336d4318</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_03950d32476df110d381f164336d430b^id=03950d32476df110d381f164336d430b"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=03950d32476df110d381f164336d430b"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=03950d32476df110d381f164336d430b"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=03950d32476df110d381f164336d430b^sys_idNOT INa8c945b6476df110d381f164336d43b2"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1404,7 +1354,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 16:16:16</sys_updated_on>
@@ -1488,7 +1438,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
@@ -1571,7 +1521,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
@@ -1602,11 +1552,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>0f950d32476df110d381f164336d4311</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>HTTP Status</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_03950d32476df110d381f164336d430b_http_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>
@@ -1625,11 +1575,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>83950d32476df110d381f164336d4315</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Body</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_03950d32476df110d381f164336d430b_body_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>
@@ -1703,7 +1653,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:07</sys_updated_on>
@@ -1790,7 +1740,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
@@ -1877,7 +1827,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
@@ -1964,7 +1914,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 16:16:16</sys_updated_on>
@@ -2051,7 +2001,7 @@ outputs.body = responseBody;&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
@@ -2109,11 +2059,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>cf950d32476df110d381f164336d4308</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Article Name</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_c3950d32476df110d381f164336d4302_article_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>
@@ -2134,11 +2084,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>4f950d32476df110d381f164336d431e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c3950d32476df110d381f164336d4302___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>
@@ -2157,11 +2107,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>83950d32476df110d381f164336d4328</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c3950d32476df110d381f164336d4302___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>
@@ -2180,11 +2130,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>8b950d32476df110d381f164336d4322</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>HTTP Status</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c3950d32476df110d381f164336d4302_http_status_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>
@@ -2203,11 +2153,11 @@ outputs.body = responseBody;&#13;
         <sys_created_on>2023-10-01 15:58:08</sys_created_on>
         <sys_id>cf950d32476df110d381f164336d432b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Mushnik's Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_name>Body</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Mushnik's Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
-        <sys_update_name/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_c3950d32476df110d381f164336d4302_body_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-01 15:58:08</sys_updated_on>
         <url/>

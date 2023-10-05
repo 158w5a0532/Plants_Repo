@@ -58,7 +58,7 @@
         <update_guid_history>d507d86e50e5b11050874896a72e088a:683290344,a98000a6fca1b1109768f22f8dbaebf1:-1708302956</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Environmental.New Plant Type">acb0b43647e9f110d381f164336d43fa</sys_audit_delete>
+        <sys_audit_delete display_value="">acb0b43647e9f110d381f164336d43fa</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-01 14:26:46</sys_created_on>

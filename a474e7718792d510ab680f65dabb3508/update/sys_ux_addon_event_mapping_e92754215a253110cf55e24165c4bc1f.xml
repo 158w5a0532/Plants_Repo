@@ -23,7 +23,7 @@
         <sys_update_name>sys_ux_addon_event_mapping_e92754215a253110cf55e24165c4bc1f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-10-03 21:35:45</sys_updated_on>
-        <target_event display_value="">ad275421b02531105b56383590e1e81f</target_event>
+        <target_event/>
         <target_payload_mapping>{
     "container": {
         "sysId": {

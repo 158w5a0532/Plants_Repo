@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Task Automation - Watering and Fertilizing</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2023-10-05 09:57:26</run_start>
+        <run_time>1970-01-01 14:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[updateNextWaterFertilizeDates(); // This function will update the next watering and Fertilize dates of each plant
+createAutomatedTasks(); // this function will create automated tasks to water and fertilize the plants
+
+function updateNextWaterFertilizeDates() {
+    //update Next Fertilize Date
+    var nextFertilizeObj = new GlideRecord('x_snc_plants_db_my_plants');
+    nextFertilizeObj.addEncodedQuery('next_fertilize<javascript:gs.beginningOfToday()^ORnext_fertilizeISEMPTY');
+    nextFertilizeObj.query();
+    while (nextFertilizeObj.next()) {
+        nextFertilizeObj.next_fertilize = getNextFertilizeDate(parseInt(nextFertilizeObj.fertilize_schedule));  // function call to get next Fertilize Date.  this function is defined below
+        nextFertilizeObj.update();
+    }
+    //update Next Watering Date
+    var nextWateringObj = new GlideRecord('x_snc_plants_db_my_plants');
+    nextWateringObj.addEncodedQuery('next_watering<javascript:gs.beginningOfToday()^ORnext_wateringISEMPTY');
+    nextWateringObj.query();
+    while (nextWateringObj.next()) {
+        nextWateringObj.next_watering = getNextWateringDate(parseInt(nextWateringObj.watering_schedule)); // function call to get next Watering Date.  this function is defined below
+        nextWateringObj.update();
+    }
+}
+
+//Create Automatic tasks
+function createAutomatedTasks() {
+
+    //Create Automatic watering tasks    
+    var wateringTaskObj = new GlideRecord('x_snc_plants_db_my_plants');
+    wateringTaskObj.addEncodedQuery('next_wateringONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()');
+    wateringTaskObj.query();
+    while (wateringTaskObj.next()) {
+        createAutomaticTask(wateringTaskObj.sys_id,'water',gs.getProperty('x_snc_plants_db.water_plant'));  // function call to create Task to water the plant.  this function is defined below
+    }
+
+    //Create Automatic fertilize tasks
+    var fertilizeTaskObj = new GlideRecord('x_snc_plants_db_my_plants');
+    fertilizeTaskObj.addEncodedQuery('next_fertilizeONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()');
+    fertilizeTaskObj.query();
+    while (fertilizeTaskObj.next()) {
+        createAutomaticTask(fertilizeTaskObj.sys_id,'fertilize',gs.getProperty('x_snc_plants_db.fertilize_plant'));// function call to create Task to fertilize the plant.  this function is defined below
+    }
+    }
+
+
+//All the functions used in the above script
+
+    function getNextFertilizeDate(nextFertilizeFrequency) {
+        if (nextFertilizeFrequency == '' || nextFertilizeFrequency == 0) {
+            nextFertilizeFrequency = 1;
+        }
+        var nextFertilizeDay = new GlideDateTime();
+        nextFertilizeDay.addDaysLocalTime(nextFertilizeFrequency);
+        return nextFertilizeDay.getDate();
+    }
+
+    function getNextWateringDate(nextWateringFrequency) {
+        if (nextWateringFrequency == '' || nextWateringFrequency == 0) {
+            nextWateringFrequency = 1;
+        }
+        var nextWateringDay = new GlideDateTime();
+        nextWateringDay.addDaysLocalTime(nextWateringFrequency);
+        return nextWateringDay.getDate();
+    }
+
+    function createAutomaticTask(plantID,typeOfTask,shortDescription) {
+        var waterTask = new GlideRecord('x_snc_plants_db_tasks');
+        waterTask.initialize();
+        waterTask.task = shortDescription;
+        waterTask.status = 'new';
+        waterTask.task_type =typeOfTask ;
+        waterTask.plant = plantID;
+        waterTask.due_date = new GlideDate();
+        waterTask.insert();
+    }
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>bhavani</sys_created_by>
+        <sys_created_on>2023-10-05 11:19:04</sys_created_on>
+        <sys_id>2a69d8cc97b531106d70fca6f053afa7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Task Automation - Watering and Fertilizing</sys_name>
+        <sys_package display_value="My Plants" source="x_snc_plants_db">a474e7718792d510ab680f65dabb3508</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Plants">a474e7718792d510ab680f65dabb3508</sys_scope>
+        <sys_update_name>sysauto_script_2a69d8cc97b531106d70fca6f053afa7</sys_update_name>
+        <sys_updated_by>bhavani</sys_updated_by>
+        <sys_updated_on>2023-10-05 11:19:51</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
